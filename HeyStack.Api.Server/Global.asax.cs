@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using System.Web;
 using Funq;
 using ServiceStack;
@@ -20,7 +19,10 @@ namespace HeyStack.Api.Server
             {}
 
             public override void Configure(Container container)
-            {}
+            {
+                container.Register<IHost>(c => new Host());
+                container.Register<IClock>(c => new Clock());
+            }
         }
    }
 }
