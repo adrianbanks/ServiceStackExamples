@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie\MovieListResultDto.cs" />
+    <Compile Include="Movie\GetMoviesDto.cs" />
+    <Compile Include="Movie\MovieResultDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Status\GetStatusDto.cs" />
     <Compile Include="Status\StatusResultDto.cs" />
