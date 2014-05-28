@@ -7,6 +7,7 @@ namespace HeyStack.Api.Server.Data
     public interface IMovieDatabase
     {
         IList<Movie> GetAllMovies();
+        Movie Save(Movie movie);
     }
 
     public class SqlMovieDatabase : IMovieDatabase
@@ -23,6 +24,15 @@ namespace HeyStack.Api.Server.Data
             using (var connection = connectionFactory.OpenDbConnection())
             {
                 return connection.Select<Movie>();
+            }
+        }
+
+        public Movie Save(Movie movie)
+        {
+            using (var connection = connectionFactory.OpenDbConnection())
+            {
+                connection.Save(movie);
+                return movie;
             }
         }
     }

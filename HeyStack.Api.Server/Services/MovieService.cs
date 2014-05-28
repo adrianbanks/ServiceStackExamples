@@ -19,5 +19,12 @@ namespace HeyStack.Api.Server.Services
             var allMovies = movieDatabase.GetAllMovies();
             return new MovieListResultDto { Entries = allMovies.Select(m => m.ConvertTo<MovieResultDto>()).ToList() };
         }
+
+        public MovieResultDto Post(PostMovieDto request)
+        {
+            var movie = request.ConvertTo<Movie>();
+            movie = movieDatabase.Save(movie);
+            return movie.ConvertTo<MovieResultDto>();
+        }
     }
 }

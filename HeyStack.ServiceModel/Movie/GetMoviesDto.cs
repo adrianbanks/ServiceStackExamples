@@ -2,7 +2,7 @@
 
 namespace HeyStack.ServiceModel.Movie
 {
-    [Route("/movies")]
+    [Route("/movies", "GET")]
     public class GetMoviesDto
     {}
 }

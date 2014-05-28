@@ -26,7 +26,7 @@ namespace HeyStack.Api.Server
             {
                 Plugins.Add(new SwaggerFeature());
 
-                var connectionString = ConfigurationManager.ConnectionStrings["SharedInstance"].ConnectionString;
+                var connectionString = ConfigurationManager.ConnectionStrings["LocalInstance"].ConnectionString;
                 var connectionFactory = new OrmLiteConnectionFactory(connectionString, SqlServerDialect.Provider);
                 container.Register<IMovieDatabase>(c => new SqlMovieDatabase(connectionFactory));
 
