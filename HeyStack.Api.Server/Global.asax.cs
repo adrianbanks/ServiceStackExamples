@@ -2,6 +2,7 @@
 using System.Web;
 using Funq;
 using ServiceStack;
+using ServiceStack.Api.Swagger;
 
 namespace HeyStack.Api.Server
 {
@@ -20,9 +21,10 @@ namespace HeyStack.Api.Server
 
             public override void Configure(Container container)
             {
+                Plugins.Add(new SwaggerFeature());
                 container.Register<IHost>(c => new Host());
                 container.Register<IClock>(c => new Clock());
             }
         }
-   }
+    }
 }
