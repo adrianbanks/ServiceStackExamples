@@ -1,4 +1,5 @@
 ﻿using System;
+using HeyStack.ServiceModel.Status;
 using ServiceStack;
 
 namespace HeyStack.Api.Server.Services

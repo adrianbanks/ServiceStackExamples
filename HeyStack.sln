@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.Api.Server", "HeyStack.Api.Server\HeyStack.Api.Server.csproj", "{039EC659-72A1-42E3-A2C9-E8F2AF821B08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.DemoApp", "HeyStack.DemoApp\HeyStack.DemoApp.csproj", "{D808EB9C-EB2F-46B8-B7E1-4F73D28A9CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.ServiceModel", "HeyStack.ServiceModel\HeyStack.ServiceModel.csproj", "{7CCCF0D8-C0EC-4E4A-A19F-C5081C825719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{039EC659-72A1-42E3-A2C9-E8F2AF821B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{039EC659-72A1-42E3-A2C9-E8F2AF821B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{039EC659-72A1-42E3-A2C9-E8F2AF821B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D808EB9C-EB2F-46B8-B7E1-4F73D28A9CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D808EB9C-EB2F-46B8-B7E1-4F73D28A9CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D808EB9C-EB2F-46B8-B7E1-4F73D28A9CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D808EB9C-EB2F-46B8-B7E1-4F73D28A9CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CCCF0D8-C0EC-4E4A-A19F-C5081C825719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CCCF0D8-C0EC-4E4A-A19F-C5081C825719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CCCF0D8-C0EC-4E4A-A19F-C5081C825719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CCCF0D8-C0EC-4E4A-A19F-C5081C825719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
